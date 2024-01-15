@@ -3,20 +3,22 @@
   margin: auto;
   margin-top: 70px;
   flex-wrap: wrap;
-  gap: var(--gap-xxl);
+  gap: var(--gap-m);
   filter: drop-shadow(5px 5px 19px #ccc9c9);
 }
 .box {
   /* flex-direction: column; */
-  max-width: 390px;
+  max-width:390px;
   background-color: var(--color-1);
-  border-radius: var(--border-radius-secondary);
+  /* border-radius: var(--border-radius-secondary); */
+  border-radius:10px ;
 }
 .imgHero2 {
   width: 390px;
   /* height: 254px; */
 }
 .imgHero2 > img {
+  border-radius: 10px 10px 0px 0px;
   width: 100%;
   /* height: 100%; */
   object-fit: cover;

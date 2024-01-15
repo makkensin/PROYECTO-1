@@ -1,6 +1,6 @@
 #hero {
   width: 100%;
-  height: 500svh;
+  /* height: 500svh; */
   background-color: var(--secondary-bg);
   align-content: start;
   padding-top: 100px;
@@ -8,9 +8,9 @@
 .banner {
   filter: drop-shadow(5px 5px 19px #ccc9c9);
   justify-content: space-between;
-  width: 60%;
+  width: 95%;
   margin: auto;
-  min-width: 1300px;
+  /* min-width: 1300px; */
   background-color: white;
   border-radius: 7px;
   flex-wrap: nowrap;
@@ -48,24 +48,26 @@
   cursor: pointer;
 }
 .ba {
-  background-color: black;
   width: 70%;
   clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 0 100%, 5% 38%, 8% 0);
+  background-color: black;
 }
 .ba > img {
-  width: 825px;
+  /* width: 825px; */
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .h3 {
   margin: auto;
-  margin-top: 100px;
-  width: 30%;
+  margin-top: 50px;
+  width: 90%;
   text-align: center;
   font-size: 24px;
   color: var(--color-5);
 }
 .info {
-  width: 90%;
+  width: 95%;
   text-align: center;
   font-size: 16px;
   font-weight: 400;
@@ -90,13 +92,45 @@
 }
 @media (max-width: 1327px) {
   .banner {
-    display: none;
-  }
-  .h3 {
-    display: none;
-  }
-  .info {
     width: 90%;
+    /* display: none; */
+  }
+  .ba{
+    display: none;
+  }
+  .article {
+    width: 100%;
+    gap: var(--gap-xs);
+    padding: var(--padding-m);
+    align-items: center;
+    text-align: center;
+  }
+  .article > h4 {
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--tertiary-text);
+  }
+  .article > h3 {
+    font-size: 20px;
+    color: var(--color-5);
+  }
+  .article > p {
+    font-size: 16px;
+    color: var(--color-5);
+  }
+  .article > button {
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 15px 35px;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+
+
+  .info {
+    width: 95%;
     text-align: center;
     font-size: 13px;
     font-weight: 400;

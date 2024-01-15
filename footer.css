@@ -1,0 +1,93 @@
+footer{
+  /* background-color: blueviolet; */
+  background-color: var(--secondary-bg);
+  margin: auto;
+  width: 100%;
+  display: flex;
+  text-transform:capitalize;
+  padding: 250px;
+  padding-top: 100px;
+
+  /* padding-top: 100px; */
+  font-family: var(--fuente);
+  color: var(--color-fon2);
+  
+}
+footer .footer-iz{
+    /* border: 2px solid black; */
+    width: 35%;
+    border-radius: 5px;
+    border-right: solid 0.5px #767676;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    /* padding-right: 30px; */
+    padding: 60px;
+    filter: drop-shadow(5px 5px 19px #ccc9c9);
+    font-size: var(--size-Font);
+    color: var( --color-font);
+}
+footer .footer-iz > h3{
+    color: var(--color-fon2);
+}
+footer .footer-iz > p{
+    font-size: 16px;
+
+}
+footer .footer-iz > button{
+    color: #464646;
+    font-weight: 600;
+    border-radius: 0.1875rem;
+    background-color: #f3e2ef;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    font-size: 16px;
+    padding: 20px 45px;
+    border: none;
+}
+
+footer .footer-iz > div{
+    margin-top: 30px;  
+}
+
+footer .footer-iz > div > h5{
+    color: #464646;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+footer .footer-iz > div > img{
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    margin: 6px; 
+}
+footer .footer-de {
+      /* border: 2px solid black; */
+      /* border-right: solid 0.5px #767676; */
+      border-radius: 5px;
+      width: 65%;
+      background-color: white;
+      /* background-color: #862770; */
+      display: flex;
+      justify-content: space-around;
+      gap: 30px;
+      padding: 60px;
+      filter: drop-shadow(5px 5px 19px #ccc9c9);
+      /* padding-right: 30px; */
+      font-size: var(--size-Font);
+      color: var( --color-font);
+      
+    }
+    footer .footer-de > div{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 70px;
+    }
+    footer .footer-de > div > h3{
+        color: var(--color-fon2);
+    }
+   
+

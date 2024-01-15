@@ -2,11 +2,11 @@
   margin: auto;
   margin-top: 100px;
   padding: var(--padding-m);
-  width: 93%;
-  height: 60svh;
-  /* background-color: aqua; */
+  width: 95%;
+  filter: drop-shadow(5px 5px 19px #ccc9c9);
   background-color: #ffff;
   border-radius: 5px;
+ 
   /* flex-direction: column; */
 }
 h3 {
@@ -18,7 +18,7 @@ h3 {
 }
 .conditions {
   width: 99%;
-  height: 50svh;
+  /* height: 50svh; */
   margin: auto;
   background-color: #ffff;
   flex-direction: column;
@@ -59,7 +59,7 @@ img {
     margin-top: 100px;
     padding: var(--padding-s);
     width: 90%;
-    height: 40svh;
+    /* height: 40svh; */
   }
   .conditions {
     width: 99%;
@@ -73,7 +73,7 @@ img {
     margin-top: 100px;
     padding: var(--padding-s);
     width: 90%;
-    height: 70svh;
+    /* height: 70svh; */
   }
   .conditions {
     width: 99%;
