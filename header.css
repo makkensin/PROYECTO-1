@@ -95,17 +95,20 @@
   /* border: solid black 2px; */
 }
 .hov1 {
-  width: 80%;
+  flex-wrap: nowrap;
+  width: 100%;
   gap: var(--gap-m);
   list-style: none;
   cursor: pointer;
   /* border: solid black 2px; */
 }
 
-.hov1 a {
+
+.hov1  a {
   color: var(--primary-text);
   text-decoration: none;
   position: relative;
+  /* border: solid black 2px; */
 }
 .hov1 a::after {
   content: '';
@@ -129,24 +132,28 @@
 .logo {
   width: 105px;
   cursor: pointer;
+  /* border: solid black 2px; */
 }
 .logo > img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 .nav2 {
+  justify-content:space-evenly;
   width: 40%;
-  gap: var(--gap-m);
+  /* gap: var(--gap-xs); */
   font-weight: 400;
   padding: var(--padding-xs);
   /* border: solid black 2px; */
 }
 .hov2 {
+  flex-wrap: nowrap;
   gap: var(--gap-m);
   list-style: none;
   cursor: pointer;
   /* border: solid black 2px; */
+  width: 50%;
 }
 .hov2 a {
   color: var(--primary-text);
@@ -173,17 +180,21 @@
   transform-origin: bottom left;
 }
 .user {
-  gap: var(--gap-m);
+  gap: var(--gap-s);
   cursor: pointer;
   /* border: solid black 2px; */
+  width: 50%;
+  
 }
 .user > div {
   width: 20px;
   height: 20px;
+  /* border: solid black 2px; */
 }
 .user > div > img {
   width: 100%;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
   filter: brightness(0%);
 }
 .menu {
@@ -220,17 +231,17 @@
     rgba(12, 69, 80, 1) 99%
   );
   position: relative;
-  flex-wrap: wrap;
+  /* border: solid black 2px; */
 }
 .total {
   /* border: 2px solid black; */
   filter: drop-shadow(5px 5px 19px #948f8f);
   border-radius: 8px;
   background-color: #ffffff;
-  width: 60%;
-  min-width: 1150px;
-  height: 110px;
-  padding: var(--padding-s);
+  width: 85%;
+  /* min-width: 1150px; */
+  height: 100px;
+  padding: var(--padding-xs);
   position: absolute;
   flex-wrap: nowrap;
   bottom: -60px;
@@ -240,7 +251,6 @@
   /* border: 2px solid black; */
   justify-content: end;
   width: 50%;
-  height: 100px;
   flex-wrap: nowrap;
 }
 .izquierda > input {
@@ -259,7 +269,6 @@
   border-radius: 0px 5px 5px 0px;
   justify-content: start;
   width: 50%;
-  height: 100px;
   flex-wrap: nowrap;
 }
 .derecha > input {
@@ -302,12 +311,10 @@
   border: solid 1px rgb(128, 125, 125);
 }
 
-@media (max-width: 1159px) {
+@media (max-width: 750px) {
   #header {
-    /* justify-content: space-between; */
-    padding-top: 0px;
-    width: 100%;
-    height: 20svh;
+    justify-content: space-between;
+    align-items: center;
   }
   .nav1 {
     display: none;
@@ -317,14 +324,14 @@
     display: none;
   }
   .logo {
-    width: 200px;
+    width: 135px;
     cursor: pointer;
-    margin: auto;
+    /* margin: auto; */
   }
   .logo > img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
   }
   .nav2 {
     display: none;
@@ -339,30 +346,32 @@
     height: 20px;
   }
   .menu {
+    /* border: solid black 2px; */
     display: block;
-    margin-left: 20px;
-    width: 7%;
-    height: 20px;
+    width: 35px;
+    margin-left: 50px;
   }
   .menu > img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
     filter: brightness(0%);
   }
   .menu2 {
     display: block;
-    margin-right: 20px;
-    width: 7%;
-    height: 20px;
+    margin-right: 50px;
+    width: 35px;
+    
   }
   .menu2 > img {
     width: 100%;
     object-fit: cover;
     filter: brightness(0%);
   }
+
   #header2 {
     width: 100%;
-    height: 5svh;
+    height: 7svh;
     background: linear-gradient(
       90deg,
       rgba(2, 0, 36, 1) 0%,
@@ -371,37 +380,112 @@
       rgba(158, 19, 131, 1) 50%,
       rgba(12, 69, 80, 1) 99%
     );
-    /* position: relative; */
-    flex-wrap: wrap;
+    position: relative;
+    /* border: solid black 2px; */
   }
+
+
   .total {
     /* border: 2px solid black; */
     filter: drop-shadow(5px 5px 19px #948f8f);
     border-radius: 8px;
     background-color: #ffffff;
-    /* width: 60%; */
-    max-width: 350px;
-    height: 110px;
-    /* position: absolute; */
-    flex-wrap: wrap;
-    bottom: -60px;
-    display: none;
-  }
-  .izquierda {
-    justify-content: end;
-    width: 50%;
-    height: 100px;
+    width: 95%;
+    /* min-width: 1150px; */
+    height: 85px;
+    padding: var(--padding-xs);
+    padding-top: 0px;
+    padding-bottom: 0px;
+    position: absolute;
     flex-wrap: nowrap;
+    bottom: -45px;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 550px){
+
+  #header2 {
+    width: 100%;
+    height: 7svh;
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(68, 13, 42, 0.9416141456582633) 0%,
+      rgba(236, 29, 42, 1) 0%,
+      rgba(158, 19, 131, 1) 50%,
+      rgba(12, 69, 80, 1) 99%
+    );
+    position: relative;
+    /* border: solid black 2px; */
+  }
+  
+  .total {
+    /* border: 2px solid black; */
+    filter: drop-shadow(5px 5px 19px #948f8f);
+    border-radius: 8px;
+    background-color: #ffffff;
+    width: 98%;
+    /* min-width: 1150px; */
+    height: 85px;
+    padding: var(--padding-xs);
+    padding-top: 0px;
+    padding-bottom: 0px;
+    position: absolute;
+    flex-wrap: nowrap;
+    bottom: -45px;
+    gap: 5px;
   }
   .izquierda > input {
     text-align: start;
-    font-size: 16px;
-    padding-left: 30px;
+    font-size: 14px;
+    padding-left: 10px;
     width: 80%;
-    height: 50px;
+    height: 45px;
     border-radius: 0px 5px 5px 0px;
     background-color: #ffffff;
     border: solid 1px gray;
     border-left: none;
   }
+  .izquierda button {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--secondary-text);
+    width: 70px;
+    height: 45px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border-right: none;
+    padding: 5px;
+    border: solid 1px rgb(128, 125, 125);
+  }
+  .derecha > input {
+    text-align: start;
+    padding-left: 10px;
+    font-size: 14px;
+    width: 80%;
+    height: 45px;
+    border-radius: 0px 5px 5px 0px;
+    border: solid 1px gray;
+    background-color: #ffffff;
+    border-left: none;
+  }
+  .derecha button {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--secondary-text);
+    width: 70px;
+    height: 45px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border-right: none;
+    padding: 5px;
+    border: solid 1px rgb(128, 125, 125);
+  }
+
 }
+
