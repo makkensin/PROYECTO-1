@@ -8,9 +8,9 @@
 .banner {
   filter: drop-shadow(5px 5px 19px #ccc9c9);
   justify-content: space-between;
+  align-items: center;
   width: 95%;
   margin: auto;
-  /* min-width: 1300px; */
   background-color: white;
   border-radius: 7px;
   flex-wrap: nowrap;
@@ -20,6 +20,7 @@
   gap: var(--gap-xs);
   padding: var(--padding-m);
   align-items: flex-start;
+  
 }
 .article > h4 {
   font-size: 16px;
@@ -48,9 +49,10 @@
   cursor: pointer;
 }
 .ba {
-  width: 70%;
+  width: 60%;
+  height: 320px;
   clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 0 100%, 5% 38%, 8% 0);
-  background-color: black;
+  
 }
 .ba > img {
   /* width: 825px; */

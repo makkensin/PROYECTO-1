@@ -20,8 +20,8 @@
 .imgHero2 > img {
   border-radius: 10px 10px 0px 0px;
   width: 100%;
-  /* height: 100%; */
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
 }
 .infoHero2 {
   max-width: 390px;
