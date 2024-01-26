@@ -12,7 +12,13 @@
   background-color: var(--color-1);
   /* border-radius: var(--border-radius-secondary); */
   border-radius:10px ;
+  transition: all .4s ease-in-out;
+  /* transition: 500ms linear;  */
 }
+.box:hover {
+  transform: scale(1.1);
+}
+
 .imgHero2 {
   width: 390px;
   /* height: 254px; */
